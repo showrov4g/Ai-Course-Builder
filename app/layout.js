@@ -21,10 +21,11 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
     <html lang="en">
-      <GoogleOneTap/>
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <GoogleOneTap/>
         {children}
       </body>
     </html>
