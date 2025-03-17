@@ -31,17 +31,20 @@ const stepperOptions = [
             <div>
                 <div className='flex flex-col items-center justify-between'>
                     <h2 className='text-4xl text-purple-500 font-medium'>Create course</h2>
-                    <div >
+                    <div className="flex items-center">
                      {
                             stepperOptions.map((item) => (
-                                <div key={item.id} className='flex items-center justify-between'>
-                                    <div className='flex items-center'>
-                                        <div className='flex items-center justify-center w-10 h-10 bg-purple-500 rounded-full'>
-                                            {item.icons}
-                                        </div>
-                                        <h3 className='text-xl font-medium ml-2'>{item.name}</h3>
+                                <div key={item.id} className="flex items-center" >
+                                    <div className="flex flex-col items-center w-[50px] md:w-[100px]">
+                                       <div className="bg-gray-500 p-3 rounded-full text-white">
+                                        {item.icons}
+                                       </div>
+                                       <h2 className="hidden md:block md:text-sm">{item.name}</h2>
                                     </div>
-                                    <div className='w-1 h-1 bg-purple-500'></div>
+                                    <div className="h-1 w-[50px] md:w-[100px] rounded-full lg:w-[170px] bg-gray-300 ">
+
+
+                                    </div>
                                 </div>
                             ))
                      }
