@@ -7,6 +7,7 @@ import { GiUpgrade } from "react-icons/gi";
 import { IoLogOut } from "react-icons/io5";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import { Progress } from '@/components/ui/progress';
 
 
 
@@ -54,6 +55,11 @@ const path = usePathname();
                 </Link>
             ))}
         </ul>
+        <div className='absolute bottom-10 w-[80%]'>
+         <Progress value={33} />
+            <h2 className='text-sm my-2'>3 out of 5 course created</h2>
+            <h2 className='text-xs text-gray-500'>Upgrade your plane for generate unlimited course </h2>  
+        </div>
     </div>
   )
 }
